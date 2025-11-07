@@ -27,7 +27,6 @@ removeFloating();
 const observer = new MutationObserver(removeFloating);
 observer.observe(document.body, { childList: true, subtree: true });
 
-
 const queryClient = new QueryClient();
 
 const App = () => (
