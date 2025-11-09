@@ -18,8 +18,8 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 255 20% 20%;
 
-    --primary: 255 70% 75%; /* Roxo Lavanda */
-    --primary-foreground: 0 0% 100%;
+    --primary: 255 70% 85%; /* Roxo Lavanda */
+    --primary-foreground: 255 70% 15%;
 
     --secondary: 29 78% 54%; /* Laranja Quente */
     --secondary-foreground: 0 0% 100%;
@@ -73,8 +73,8 @@ All colors MUST be HSL.
     --popover: 255 20% 15%;
     --popover-foreground: 255 20% 90%;
 
-    --primary: 255 70% 80%; /* Roxo Lavanda */
-    --primary-foreground: 0 0% 100%;
+    --primary: 255 70% 90%; /* Roxo Lavanda */
+    --primary-foreground: 255 70% 10%;
 
     --secondary: 29 78% 65%; /* Laranja Quente */
     --secondary-foreground: 0 0% 100%;
