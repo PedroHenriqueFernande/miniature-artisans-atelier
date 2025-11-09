@@ -12,7 +12,6 @@ import Comissoes from "./pages/Comissoes";
 import Contato from "./pages/Contato";
 import NotFound from "./pages/NotFound";
 
-<<<<<<< HEAD
 const removeFloating = () => {
   document
     .querySelectorAll(
@@ -28,8 +27,6 @@ removeFloating();
 const observer = new MutationObserver(removeFloating);
 observer.observe(document.body, { childList: true, subtree: true });
 
-=======
->>>>>>> cb5a72cb5f5d4a84931a5400018b6cb8a28b31d7
 const queryClient = new QueryClient();
 
 const App = () => (
