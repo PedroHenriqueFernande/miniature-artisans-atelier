@@ -22,9 +22,9 @@ export default function Home() {
         
         <div className="container relative z-10 mx-auto px-4 py-20 lg:px-8">
           <div className="max-w-2xl animate-fade-in-up">
-            <h1 className="font-display text-5xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl mb-6">
+            <h1 className="font-display text-5xl font-bold tracking-tight text-primary sm:text-6xl lg:text-7xl mb-6">
               Onde Cada Detalhe é Feito com{" "}
-              <span className="text-accent">Carinho e Dedicação</span>
+              <span className="text-info">Carinho e Dedicação</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Bem-vindo ao MiniMundos, onde transformamos memórias especiais em miniaturas encantadoras.

@@ -8,101 +8,101 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Cores MiniMundos - Bege, Madeira, Menta, Azul, Pêssego */
-    --background: 0 0% 96%;
-    --foreground: 24 29% 49%;
+    /* Nova Paleta - Roxo Lavanda, Laranja Quente, Amarelo Forte, Rosa Magenta, Verde */
+    --background: 255 20% 98%;
+    --foreground: 255 20% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 24 29% 49%;
+    --card-foreground: 255 20% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 24 29% 49%;
+    --popover-foreground: 255 20% 20%;
 
-    --primary: 24 29% 49%;
-    --primary-foreground: 0 0% 96%;
+    --primary: 255 70% 75%; /* Roxo Lavanda */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 14 53% 86%;
-    --secondary-foreground: 24 29% 35%;
+    --secondary: 29 78% 54%; /* Laranja Quente */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 255 20% 95%;
+    --muted-foreground: 255 10% 50%;
 
-    --accent: 145 37% 74%;
-    --accent-foreground: 24 29% 35%;
+    --accent: 44 50% 65%; /* Amarelo Conforto */
+    --accent-foreground: 44 50% 20%;
 
-    --info: 201 54% 82%;
-    --info-foreground: 24 29% 35%;
+    --info: 169 69% 41%; /* Verde */
+    --info-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 328 50% 75%; /* Rosa Conforto */
+    --destructive-foreground: 328 50% 20%;
 
-    --border: 0 0% 82%;
-    --input: 0 0% 90%;
-    --ring: 145 37% 74%;
+    --border: 255 10% 85%;
+    --input: 255 10% 90%;
+    --ring: 255 70% 62%;
 
     --radius: 1rem;
 
     /* Gradientes suaves */
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 96%) 0%, hsl(14 53% 86%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(0 0% 96%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(255 20% 98%) 0%, hsl(29 78% 54%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(255 20% 95%) 100%);
 
     /* Sombras orgânicas */
-    --shadow-soft: 0 4px 20px rgba(160, 116, 89, 0.1);
-    --shadow-medium: 0 8px 30px rgba(160, 116, 89, 0.15);
+    --shadow-soft: 0 4px 20px hsla(255, 20%, 20%, 0.1);
+    --shadow-medium: 0 8px 30px hsla(255, 20%, 20%, 0.15);
 
     /* Transições suaves */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 24 29% 49%;
-    --sidebar-primary: 24 29% 49%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 145 37% 74%;
-    --sidebar-accent-foreground: 24 29% 35%;
-    --sidebar-border: 0 0% 82%;
-    --sidebar-ring: 145 37% 74%;
+    --sidebar-background: 255 20% 98%;
+    --sidebar-foreground: 255 20% 20%;
+    --sidebar-primary: 255 70% 62%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 44 88% 58%;
+    --sidebar-accent-foreground: 255 20% 20%;
+    --sidebar-border: 255 10% 85%;
+    --sidebar-ring: 255 70% 62%;
   }
 
   .dark {
-    --background: 24 29% 15%;
-    --foreground: 0 0% 96%;
+    --background: 255 20% 10%;
+    --foreground: 255 20% 90%;
 
-    --card: 24 29% 18%;
-    --card-foreground: 0 0% 96%;
+    --card: 255 20% 15%;
+    --card-foreground: 255 20% 90%;
 
-    --popover: 24 29% 18%;
-    --popover-foreground: 0 0% 96%;
+    --popover: 255 20% 15%;
+    --popover-foreground: 255 20% 90%;
 
-    --primary: 145 37% 74%;
-    --primary-foreground: 24 29% 15%;
+    --primary: 255 70% 80%; /* Roxo Lavanda */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 14 53% 65%;
-    --secondary-foreground: 0 0% 96%;
+    --secondary: 29 78% 65%; /* Laranja Quente */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 24 29% 20%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 255 20% 20%;
+    --muted-foreground: 255 10% 70%;
 
-    --accent: 201 54% 62%;
-    --accent-foreground: 0 0% 96%;
+    --accent: 44 50% 25%; /* Amarelo Conforto */
+    --accent-foreground: 44 50% 90%;
 
-    --info: 201 54% 62%;
-    --info-foreground: 0 0% 96%;
+    --info: 169 69% 51%; /* Verde */
+    --info-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 50%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 328 50% 25%; /* Rosa Conforto */
+    --destructive-foreground: 328 50% 90%;
 
-    --border: 24 29% 25%;
-    --input: 24 29% 25%;
-    --ring: 145 37% 74%;
+    --border: 255 10% 25%;
+    --input: 255 10% 25%;
+    --ring: 255 70% 70%;
     
-    --sidebar-background: 24 29% 15%;
-    --sidebar-foreground: 0 0% 96%;
-    --sidebar-primary: 145 37% 74%;
-    --sidebar-primary-foreground: 24 29% 15%;
-    --sidebar-accent: 24 29% 20%;
-    --sidebar-accent-foreground: 0 0% 96%;
-    --sidebar-border: 24 29% 25%;
-    --sidebar-ring: 145 37% 74%;
+    --sidebar-background: 255 20% 10%;
+    --sidebar-foreground: 255 20% 90%;
+    --sidebar-primary: 255 70% 70%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 255 20% 20%;
+    --sidebar-accent-foreground: 255 20% 90%;
+    --sidebar-border: 255 10% 25%;
+    --sidebar-ring: 255 70% 70%;
   }
 }
 
