@@ -10,7 +10,7 @@ All colors MUST be HSL.
   :root {
     /* Nova Paleta - Roxo Lavanda, Laranja Quente, Amarelo Forte, Rosa Magenta, Verde */
     --background: 255 20% 98%;
-    --foreground: 255 20% 20%;
+    --foreground: 158 18% 57%;
 
     --card: 0 0% 100%;
     --card-foreground: 255 20% 20%;
@@ -30,7 +30,7 @@ All colors MUST be HSL.
     --accent: 44 50% 65%; /* Amarelo Conforto */
     --accent-foreground: 44 50% 20%;
 
-    --info: 169 69% 41%; /* Verde */
+    --info: 10 40% 74%; /* Rosa Pêssego */
     --info-foreground: 0 0% 100%;
 
     --destructive: 328 50% 75%; /* Rosa Conforto */
@@ -65,7 +65,7 @@ All colors MUST be HSL.
 
   .dark {
     --background: 255 20% 10%;
-    --foreground: 255 20% 90%;
+    --foreground: 158 18% 67%;
 
     --card: 255 20% 15%;
     --card-foreground: 255 20% 90%;
@@ -85,7 +85,7 @@ All colors MUST be HSL.
     --accent: 44 50% 25%; /* Amarelo Conforto */
     --accent-foreground: 44 50% 90%;
 
-    --info: 169 69% 51%; /* Verde */
+    --info: 10 40% 84%; /* Rosa Pêssego */
     --info-foreground: 0 0% 100%;
 
     --destructive: 328 50% 25%; /* Rosa Conforto */

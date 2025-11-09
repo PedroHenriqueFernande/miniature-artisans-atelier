@@ -9,19 +9,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `url('/fundo 1.png')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
+          className="absolute inset-0 z-0 bg-hero-pattern bg-cover bg-center lg:bg-right"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
         </div>
         
         <div className="container relative z-10 mx-auto px-4 py-20 lg:px-8">
           <div className="max-w-2xl animate-fade-in-up">
-            <h1 className="font-display text-5xl font-bold tracking-tight text-primary sm:text-6xl lg:text-7xl mb-6">
+            <h1 className="font-display text-5xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl mb-6">
               Onde Cada Detalhe é Feito com{" "}
               <span className="text-info">Carinho e Dedicação</span>
             </h1>
