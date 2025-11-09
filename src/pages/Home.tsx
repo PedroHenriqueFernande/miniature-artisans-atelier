@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Sparkles, Users } from "lucide-react";
-import heroImage from "@/assets/hero-miniatures.jpg";
 import galleryPreview from "@/assets/gallery-preview.jpg";
 
 export default function Home() {
@@ -12,7 +11,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `url(${heroImage})`,
+            backgroundImage: `url('/fundo 1.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
