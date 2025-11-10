@@ -11,7 +11,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 z-0 bg-hero-pattern bg-cover bg-center lg:bg-right"
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-transparent lg:from-background/95 lg:via-background/70" />
         </div>
         
         <div className="container relative z-10 mx-auto px-4 py-20 lg:px-8">
