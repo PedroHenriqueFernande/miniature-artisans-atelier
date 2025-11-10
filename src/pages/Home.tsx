@@ -32,7 +32,7 @@ export default function Home() {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <Link to="/comissoes">Peça Sua Miniatura</Link>
+                <Link to="/encomendas">Peça Sua Miniatura</Link>
               </Button>
             </div>
           </div>
@@ -127,8 +127,8 @@ export default function Home() {
             Entre em contato e vamos criar juntos uma peça especial que vai eternizar suas memórias.
           </p>
           <Button size="lg" variant="hero" asChild className="animate-scale-in">
-            <Link to="/comissoes">
-              Solicitar Comissão Personalizada
+            <Link to="/encomendas">
+              Solicitar Encomenda
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>

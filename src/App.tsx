@@ -8,8 +8,7 @@ import { Layout } from "./components/Layout";
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Galeria from "./pages/Galeria";
-import Comissoes from "./pages/Comissoes";
-import Contato from "./pages/Contato";
+import Encomendas from "./pages/Encomendas";
 import NotFound from "./pages/NotFound";
 
 const removeFloating = () => {
@@ -41,8 +40,7 @@ const App = () => (
             <Route path="/" element={<Home />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/galeria" element={<Galeria />} />
-            <Route path="/comissoes" element={<Comissoes />} />
-            <Route path="/contato" element={<Contato />} />
+            <Route path="/encomendas" element={<Encomendas />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

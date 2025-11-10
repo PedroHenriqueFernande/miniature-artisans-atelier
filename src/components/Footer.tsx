@@ -27,8 +27,8 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/comissoes" className="text-muted-foreground hover:text-accent smooth-transition">
-                  Comissões Personalizadas
+                <Link to="/encomendas" className="text-muted-foreground hover:text-accent smooth-transition">
+                  Encomendas
                 </Link>
               </li>
             </ul>
@@ -40,6 +40,7 @@ export const Footer = () => {
               <li className="flex items-center gap-2 text-muted-foreground">
                 <a href="https://wa.me/558191933388" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-accent smooth-transition">
                   <MessageCircle className="h-4 w-4 text-muted-foreground" />
+                  WhatsApp
                 </a>
               </li>
             </ul>
@@ -52,6 +53,7 @@ export const Footer = () => {
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
+                Instagram
               </a>
             </div>
           </div>

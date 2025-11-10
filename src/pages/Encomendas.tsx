@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Clock, CheckCircle2, Palette } from "lucide-react";
 import { toast } from "sonner";
 
-export default function EncomendasPersonalizadas() {
+export default function Encomendas() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,7 +18,7 @@ export default function EncomendasPersonalizadas() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast.success("Pedido enviado com sucesso!", {
-      description: "Entraremos em contato em breve para discutir sua comissão personalizada.",
+      description: "Entraremos em contato em breve para discutir sua encomenda.",
     });
     setFormData({ name: "", email: "", phone: "", description: "" });
   };
@@ -35,7 +35,7 @@ export default function EncomendasPersonalizadas() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12 animate-fade-in">
           <h1 className="font-display text-5xl font-bold mb-6">
-            Encomendas <span className="text-accent">Personalizadas</span>
+            Encomendas <span className="text-accent"></span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Transforme suas lembranças em miniaturas exclusivas! Conte-nos sobre sua ideia e criaremos uma peça única para você.
@@ -122,23 +122,12 @@ export default function EncomendasPersonalizadas() {
               </div>
             </div>
 
-            <div className="mt-8 p-6 bg-accent/10 border border-accent/20 rounded-xl">
-              <h3 className="font-accent font-semibold mb-2">Faixa de Preços</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Comissões personalizadas começam a partir de R$ 500,00, variando conforme:
-              </p>
-              <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
-                <li>Tamanho e complexidade do projeto</li>
-                <li>Materiais utilizados</li>
-                <li>Detalhamento e elementos adicionais</li>
-                <li>Prazo de entrega desejado</li>
-              </ul>
-            </div>
+
           </div>
 
           <Card className="animate-fade-in border-border">
             <CardContent className="pt-6">
-              <h2 className="font-display text-2xl font-bold mb-6">Solicite Sua Comissão</h2>
+              <h2 className="font-display text-2xl font-bold mb-6">Solicite Sua Encomenda</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Nome Completo</Label>
@@ -196,8 +185,12 @@ export default function EncomendasPersonalizadas() {
                   Enviar Solicitação
                 </Button>
 
+                <p className="text-sm text-muted-foreground text-center">
+                  Após envio do seu formulário, nossa resposta será de imediato, fique atento(a) ao whatsapp.
+                </p>
+
                 <p className="text-xs text-muted-foreground text-center">
-                  Ao enviar, você concorda que entraremos em contato para discutir sua comissão personalizada.
+                  Ao enviar, você concorda que entraremos em contato para discutir sua encomenda.
                 </p>
               </form>
             </CardContent>
