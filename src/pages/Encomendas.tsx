@@ -1,35 +1,9 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import { Clock, CheckCircle2, Palette } from "lucide-react";
-import { toast } from "sonner";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 export default function Encomendas() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    description: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast.success("Pedido enviado com sucesso!", {
-      description: "Entraremos em contato em breve para discutir sua encomenda.",
-    });
-    setFormData({ name: "", email: "", phone: "", description: "" });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
-
   return (
     <div className="flex flex-col py-20">
       <div className="container mx-auto px-4 lg:px-8">
@@ -91,8 +65,7 @@ export default function Encomendas() {
                 <div>
                   <h3 className="font-accent font-semibold mb-2">Conte Sua Ideia</h3>
                   <p className="text-sm text-muted-foreground">
-                    Preencha o formulário ao lado com detalhes sobre a miniatura que você deseja. 
-                    Quanto mais informações, melhor!
+                    Clique no botão ao lado e mande mensagem com detalhes sobre a miniatura que você deseja. Quanto mais informações, melhor!
                   </p>
                 </div>
               </div>
@@ -104,7 +77,7 @@ export default function Encomendas() {
                 <div>
                   <h3 className="font-accent font-semibold mb-2">Orçamento e Projeto</h3>
                   <p className="text-sm text-muted-foreground">
-                    Entraremos em contato para discutir os detalhes, apresentar um esboço inicial e fornecer um orçamento personalizado.
+                    Te responderemos para discutir os detalhes, apresentar um esboço inicial e fornecer um orçamento personalizado.
                   </p>
                 </div>
               </div>
@@ -126,73 +99,17 @@ export default function Encomendas() {
           </div>
 
           <Card className="animate-fade-in border-border">
-            <CardContent className="pt-6">
+            <CardContent className="pt-6 text-center">
               <h2 className="font-display text-2xl font-bold mb-6">Solicite Sua Encomenda</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Nome Completo</Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    placeholder="Seu nome"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="email">E-mail</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    placeholder="seu@email.com"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Telefone (WhatsApp)</Label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                    placeholder="(11) 99999-9999"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="description">Descreva Sua Ideia</Label>
-                  <Textarea
-                    id="description"
-                    name="description"
-                    value={formData.description}
-                    onChange={handleChange}
-                    required
-                    placeholder="Conte-nos sobre a miniatura que você gostaria de criar. Inclua detalhes como tema, cores, tamanho aproximado, elementos importantes, e qualquer referência visual que possa ajudar."
-                    rows={6}
-                    className="resize-none"
-                  />
-                </div>
-
-                <Button type="submit" size="lg" variant="hero" className="w-full">
-                  Enviar Solicitação
-                </Button>
-
-                <p className="text-sm text-muted-foreground text-center">
-                  Após envio do seu formulário, nossa resposta será de imediato, fique atento(a) ao whatsapp.
-                </p>
-
-                <p className="text-xs text-muted-foreground text-center">
-                  Ao enviar, você concorda que entraremos em contato para discutir sua encomenda.
-                </p>
-              </form>
+              <p className="text-lg text-muted-foreground mb-8">
+                Para fazer sua encomenda é simples, clique no botão abaixo e fale conosco pelo WhatsApp!
+              </p>
+              <Button size="lg" variant="hero" asChild className="w-full">
+                <a href="https://wa.me/558191933388" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                  <WhatsAppIcon size={24} />
+                  Fazer Encomenda
+                </a>
+              </Button>
             </CardContent>
           </Card>
         </div>

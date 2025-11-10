@@ -24,7 +24,7 @@ export default function Sobre() {
             <div className="animate-fade-in space-y-6">
               <h2 className="font-display text-3xl font-bold">Nossa História</h2>
               <p className="text-muted-foreground leading-relaxed">
-                O MiniMundos nasceu da paixão por transformar memórias preciosas em obras de arte em miniatura.
+                Olá, tudo bem? Meu nome é Wilde, sou criadora desse Meu Atelie, que surgiu da paixão por transformar memórias preciosas em obras de arte em miniatura.
                 Cada peça é cuidadosamente elaborada à mão, com atenção aos mínimos detalhes.
               </p>
               <p className="text-muted-foreground leading-relaxed">

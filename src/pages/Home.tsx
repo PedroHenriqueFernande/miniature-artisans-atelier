@@ -32,7 +32,7 @@ export default function Home() {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <Link to="/encomendas">Peça Sua Miniatura</Link>
+                <a href="https://wa.me/558191933388" target="_blank" rel="noopener noreferrer">Peça Sua Miniatura</a>
               </Button>
             </div>
           </div>
