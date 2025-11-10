@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Sparkles, Users } from "lucide-react";
 import galleryPreview from "/1.png";
+import { AnimatedSection } from "@/components/AnimatedSection";
 
 export default function Home() {
   return (
@@ -40,102 +41,108 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div className="text-center animate-fade-in hover-lift rounded-2xl p-8 bg-background">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-accent/20">
-                <Heart className="h-8 w-8 text-accent" />
+      <AnimatedSection>
+        <section className="py-20 bg-card">
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+              <div className="text-center animate-fade-in hover-lift rounded-2xl p-8 bg-background">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-accent/20">
+                  <Heart className="h-8 w-8 text-accent" />
+                </div>
+                <h3 className="font-display text-xl font-semibold mb-3">Feito com Amor</h3>
+                <p className="text-muted-foreground">
+                  Cada miniatura é criada com dedicação e carinho, valorizando cada pequeno detalhe.
+                </p>
               </div>
-              <h3 className="font-display text-xl font-semibold mb-3">Feito com Amor</h3>
-              <p className="text-muted-foreground">
-                Cada miniatura é criada com dedicação e carinho, valorizando cada pequeno detalhe.
-              </p>
-            </div>
 
-            <div className="text-center animate-fade-in hover-lift rounded-2xl p-8 bg-background" style={{ animationDelay: "0.1s" }}>
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-info/20">
-                <Sparkles className="h-8 w-8 text-info" />
+              <div className="text-center animate-fade-in hover-lift rounded-2xl p-8 bg-background" style={{ animationDelay: "0.1s" }}>
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-info/20">
+                  <Sparkles className="h-8 w-8 text-info" />
+                </div>
+                <h3 className="font-display text-xl font-semibold mb-3">Peças Únicas</h3>
+                <p className="text-muted-foreground">
+                  Obras artesanais exclusivas que capturam momentos especiais e memórias preciosas.
+                </p>
               </div>
-              <h3 className="font-display text-xl font-semibold mb-3">Peças Únicas</h3>
-              <p className="text-muted-foreground">
-                Obras artesanais exclusivas que capturam momentos especiais e memórias preciosas.
-              </p>
-            </div>
 
-            <div className="text-center animate-fade-in hover-lift rounded-2xl p-8 bg-background" style={{ animationDelay: "0.2s" }}>
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/30">
-                <Users className="h-8 w-8 text-primary" />
+              <div className="text-center animate-fade-in hover-lift rounded-2xl p-8 bg-background" style={{ animationDelay: "0.2s" }}>
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/30">
+                  <Users className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="font-display text-xl font-semibold mb-3">Personalização</h3>
+                <p className="text-muted-foreground">
+                  Criamos miniaturas personalizadas baseadas nas suas memórias e histórias favoritas.
+                </p>
               </div>
-              <h3 className="font-display text-xl font-semibold mb-3">Personalização</h3>
-              <p className="text-muted-foreground">
-                Criamos miniaturas personalizadas baseadas nas suas memórias e histórias favoritas.
-              </p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </AnimatedSection>
 
       {/* Gallery Preview Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
-            <div className="animate-fade-in">
-              <h2 className="font-display text-4xl font-bold mb-6">
-                O Mini Detalhe Que Faz Qualquer Ambiente Ganhar Vida
-              </h2>
-              <h3 className="text-lg text-muted-foreground mb-6 leading-relaxed font-semibold">
-                Por que você deveria adquirir um MiniMundo?
-              </h3>
-              <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                Detalhe por detalhe, ele não é apenas uma peça decorativa, é um pedaço de memória, poesia e significado. É arte que toca, e transforma ambientes com delicadeza.
-              </p>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start gap-3">
-                  <div className="h-2 w-2 rounded-full bg-accent mt-2" />
-                  <p className="text-muted-foreground">Decoração Encantadora: Pequenos mundos que trazem aconchego e personalidade ao ambiente.</p>
+      <AnimatedSection>
+        <section className="py-20">
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
+              <div className="animate-fade-in">
+                <h2 className="font-display text-4xl font-bold mb-6">
+                  O Mini Detalhe Que Faz Qualquer Ambiente Ganhar Vida
+                </h2>
+                <h3 className="text-lg text-muted-foreground mb-6 leading-relaxed font-semibold">
+                  Por que você deveria adquirir um MiniMundo?
+                </h3>
+                <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
+                  Detalhe por detalhe, ele não é apenas uma peça decorativa, é um pedaço de memória, poesia e significado. É arte que toca, e transforma ambientes com delicadeza.
+                </p>
+                <div className="space-y-4 mb-8">
+                  <div className="flex items-start gap-3">
+                    <div className="h-2 w-2 rounded-full bg-accent mt-2" />
+                    <p className="text-muted-foreground">Decoração Encantadora: Pequenos mundos que trazem aconchego e personalidade ao ambiente.</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="h-2 w-2 rounded-full bg-info mt-2" />
+                    <p className="text-muted-foreground">Beleza que Conta Histórias: Representam momentos, sentimentos e memórias que ficam eternizados.</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="h-2 w-2 rounded-full bg-secondary mt-2" />
+                    <p className="text-muted-foreground">Presente Perfeito e Memorável: Ideal para surpreender alguém especial com algo realmente único.</p>
+                  </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="h-2 w-2 rounded-full bg-info mt-2" />
-                  <p className="text-muted-foreground">Beleza que Conta Histórias: Representam momentos, sentimentos e memórias que ficam eternizados.</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="h-2 w-2 rounded-full bg-secondary mt-2" />
-                  <p className="text-muted-foreground">Presente Perfeito e Memorável: Ideal para surpreender alguém especial com algo realmente único.</p>
-                </div>
+                <Button size="lg" variant="default" asChild>
+                  <Link to="/galeria">Ver Galeria Completa</Link>
+                </Button>
               </div>
-              <Button size="lg" variant="default" asChild>
-                <Link to="/galeria">Ver Galeria Completa</Link>
-              </Button>
-            </div>
-            <div className="animate-scale-in">
-              <img
-                src={galleryPreview}
-                alt="Galeria de Miniaturas MiniMundos"
-                className="rounded-2xl shadow-lg hover-lift w-full"
-              />
+              <div className="animate-scale-in">
+                <img
+                  src={galleryPreview}
+                  alt="Galeria de Miniaturas MiniMundos"
+                  className="rounded-2xl shadow-lg hover-lift w-full"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </AnimatedSection>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-accent/10 via-info/10 to-secondary/10">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h2 className="font-display text-4xl font-bold mb-6 animate-fade-in">
-            Pronto para Ter Sua Própria Miniatura?
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in">
-            Entre em contato e vamos criar juntos uma peça especial que vai eternizar suas memórias.
-          </p>
-          <Button size="lg" variant="hero" asChild className="animate-scale-in">
-            <Link to="/encomendas">
-              Solicitar Encomenda
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
-        </div>
-      </section>
+      <AnimatedSection>
+        <section className="py-20 bg-gradient-to-r from-accent/10 via-info/10 to-secondary/10">
+          <div className="container mx-auto px-4 lg:px-8 text-center">
+            <h2 className="font-display text-4xl font-bold mb-6 animate-fade-in">
+              Pronto para Ter Sua Própria Miniatura?
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in">
+              Entre em contato e vamos criar juntos uma peça especial que vai eternizar suas memórias.
+            </p>
+            <Button size="lg" variant="hero" asChild className="animate-scale-in">
+              <Link to="/encomendas">
+                Solicitar Encomenda
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
+        </section>
+      </AnimatedSection>
     </div>
   );
 }

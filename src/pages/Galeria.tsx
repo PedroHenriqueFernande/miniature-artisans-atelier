@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { AnimatedSection } from "@/components/AnimatedSection";
 
 const mockGalleryItems = [
   {
@@ -56,40 +57,42 @@ export default function Galeria() {
   return (
     <div className="flex flex-col py-20">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="text-center mb-12 animate-fade-in">
-          <h1 className="font-display text-5xl font-bold mb-6">
-            Galeria de <span className="text-accent">Obras</span>
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore nossa coleção de miniaturas artesanais. Cada peça é única e feita com dedicação.
-          </p>
-        </div>
+        <AnimatedSection>
+          <div className="text-center mb-12">
+            <h1 className="font-display text-5xl font-bold mb-6">
+              Galeria de <span className="text-accent">Obras</span>
+            </h1>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Explore nossa coleção de miniaturas artesanais. Cada peça é única e feita com dedicação.
+            </p>
+          </div>
+        </AnimatedSection>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {mockGalleryItems.map((item, index) => (
-            <Card
-              key={item.id}
-              className="overflow-hidden hover-lift animate-fade-in border-border"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover hover-scale"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="font-display text-xl font-bold mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground mb-4">{item.description}</p>
-                <div className="flex items-center justify-between">
-                  <span className="font-accent font-semibold text-lg text-accent">{item.price}</span>
-                  <Button size="sm" variant="accent">
-                    Ver Detalhes
-                  </Button>
+          {mockGalleryItems.map((item) => (
+            <AnimatedSection key={item.id}>
+              <Card
+                className="overflow-hidden hover-lift border-border"
+              >
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover hover-scale"
+                  />
                 </div>
-              </CardContent>
-            </Card>
+                <CardContent className="p-6">
+                  <h3 className="font-display text-xl font-bold mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground mb-4">{item.description}</p>
+                  <div className="flex items-center justify-between">
+                    <span className="font-accent font-semibold text-lg text-accent">{item.price}</span>
+                    <Button size="sm" variant="accent">
+                      Ver Detalhes
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </AnimatedSection>
           ))}
         </div>
       </div>
