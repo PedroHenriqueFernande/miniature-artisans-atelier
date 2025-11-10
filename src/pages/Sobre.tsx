@@ -25,8 +25,7 @@ export default function Sobre() {
               <h2 className="font-display text-3xl font-bold">Nossa História</h2>
               <p className="text-muted-foreground leading-relaxed">
                 O MiniMundos nasceu da paixão por transformar memórias preciosas em obras de arte em miniatura.
-                Cada peça é cuidadosamente elaborada à mão, com atenção aos mínimos detalhes, utilizando
-                materiais selecionados e técnicas artesanais refinadas.
+                Cada peça é cuidadosamente elaborada à mão, com atenção aos mínimos detalhes.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Acreditamos que as pequenas coisas têm um grande poder de evocar emoções e contar histórias.
@@ -41,7 +40,7 @@ export default function Sobre() {
               <h3 className="font-display text-2xl font-bold mb-4 text-accent">Nosso Processo</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Cada miniatura passa por um processo artesanal cuidadoso, desde o conceito inicial até
-                os toques finais. Utilizamos materiais naturais e de alta qualidade, garantindo que
+                os toques finais. Utilizamos materiais de alta qualidade, garantindo que
                 cada peça seja durável e autêntica.
               </p>
             </div>
@@ -58,27 +57,7 @@ export default function Sobre() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-b from-transparent to-muted/30">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            <h2 className="font-display text-3xl font-bold mb-6">O Que Nos Torna Especiais</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-              <div className="bg-background rounded-xl p-6">
-                <div className="text-4xl font-display font-bold text-accent mb-2">100%</div>
-                <p className="text-sm text-muted-foreground">Artesanal</p>
-              </div>
-              <div className="bg-background rounded-xl p-6">
-                <div className="text-4xl font-display font-bold text-info mb-2">+500</div>
-                <p className="text-sm text-muted-foreground">Peças Criadas</p>
-              </div>
-              <div className="bg-background rounded-xl p-6">
-                <div className="text-4xl font-display font-bold text-secondary mb-2">♥</div>
-                <p className="text-sm text-muted-foreground">Feito com Amor</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 }

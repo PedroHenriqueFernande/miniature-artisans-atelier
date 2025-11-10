@@ -128,7 +128,7 @@ export default {
         "scale-in": "scale-in 0.4s ease-out",
       },
       backgroundImage: {
-        'hero-pattern': "url('/Fundo3.png')",
+        'hero-pattern': "url('/Fundo4.png')",
       }
     },
   },

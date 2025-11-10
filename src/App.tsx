@@ -3,11 +3,11 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import { Layout } from "./components/Layout";
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Galeria from "./pages/Galeria";
-import Loja from "./pages/Loja";
 import Comissoes from "./pages/Comissoes";
 import Contato from "./pages/Contato";
 import NotFound from "./pages/NotFound";
@@ -35,12 +35,12 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/galeria" element={<Galeria />} />
-            <Route path="/loja" element={<Loja />} />
             <Route path="/comissoes" element={<Comissoes />} />
             <Route path="/contato" element={<Contato />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

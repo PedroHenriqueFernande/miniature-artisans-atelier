@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Mail, Phone } from "lucide-react";
+import { Instagram, MessageCircle } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -27,11 +27,6 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/loja" className="text-muted-foreground hover:text-accent smooth-transition">
-                  Loja
-                </Link>
-              </li>
-              <li>
                 <Link to="/comissoes" className="text-muted-foreground hover:text-accent smooth-transition">
                   Comissões Personalizadas
                 </Link>
@@ -43,32 +38,20 @@ export const Footer = () => {
             <h4 className="font-accent font-semibold text-foreground mb-4">Contato</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-muted-foreground">
-                <Mail className="h-4 w-4 text-accent" />
-                contato@minimundos.com
-              </li>
-              <li className="flex items-center gap-2 text-muted-foreground">
-                <Phone className="h-4 w-4 text-accent" />
-                (11) 99999-9999
+                <a href="https://wa.me/558191933388" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-accent smooth-transition">
+                  <MessageCircle className="h-4 w-4 text-muted-foreground" />
+                </a>
               </li>
             </ul>
             <div className="flex gap-4 mt-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/criando.minimundo?utm_source=ig_web_button_share_sheet&igsh=dGpwZjY2dWl0MWkw"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent smooth-transition"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-accent smooth-transition"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
               </a>
             </div>
           </div>

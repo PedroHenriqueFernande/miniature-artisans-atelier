@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Sparkles, Users } from "lucide-react";
-import galleryPreview from "@/assets/gallery-preview.jpg";
+import galleryPreview from "/1.png";
 
 export default function Home() {
   return (

@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Clock, CheckCircle2, Palette } from "lucide-react";
 import { toast } from "sonner";
 
-export default function Comissoes() {
+export default function EncomendasPersonalizadas() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -35,7 +35,7 @@ export default function Comissoes() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12 animate-fade-in">
           <h1 className="font-display text-5xl font-bold mb-6">
-            Comissões <span className="text-accent">Personalizadas</span>
+            Encomendas <span className="text-accent">Personalizadas</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Transforme suas lembranças em miniaturas exclusivas! Conte-nos sobre sua ideia e criaremos uma peça única para você.

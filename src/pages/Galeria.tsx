@@ -2,12 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
-const categories = [
-  { id: "all", name: "Todas" },
-  { id: "windows", name: "Janelas e Jardins" },
-  { id: "past", name: "Cenas do Passado" },
-  { id: "memories", name: "Memórias e Natureza" },
-];
+
 
 const mockGalleryItems = [
   {
@@ -61,13 +56,6 @@ const mockGalleryItems = [
 ];
 
 export default function Galeria() {
-  const [selectedCategory, setSelectedCategory] = useState("all");
-
-  const filteredItems =
-    selectedCategory === "all"
-      ? mockGalleryItems
-      : mockGalleryItems.filter((item) => item.category === selectedCategory);
-
   return (
     <div className="flex flex-col py-20">
       <div className="container mx-auto px-4 lg:px-8">
@@ -80,21 +68,8 @@ export default function Galeria() {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-3 mb-12 animate-fade-in">
-          {categories.map((category) => (
-            <Button
-              key={category.id}
-              variant={selectedCategory === category.id ? "hero" : "outline"}
-              onClick={() => setSelectedCategory(category.id)}
-              className="font-accent"
-            >
-              {category.name}
-            </Button>
-          ))}
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredItems.map((item, index) => (
+          {mockGalleryItems.map((item, index) => (
             <Card
               key={item.id}
               className="overflow-hidden hover-lift animate-fade-in border-border"
