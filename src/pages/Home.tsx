@@ -82,24 +82,26 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
             <div className="animate-fade-in">
               <h2 className="font-display text-4xl font-bold mb-6">
-                Explore Nossos <span className="text-accent">MiniMundos</span>
+                O Mini Detalhe Que Faz Qualquer Ambiente Ganhar Vida
               </h2>
+              <h3 className="text-lg text-muted-foreground mb-6 leading-relaxed font-semibold">
+                Por que você deveria adquirir um MiniMundo?
+              </h3>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                De janelas encantadoras a cenas nostálgicas do passado, cada miniatura conta uma história única.
-                Navegue por nossa galeria e descubra o mundo em miniatura.
+                Detalhe por detalhe, ele não é apenas uma peça decorativa, é um pedaço de memória, poesia e significado. É arte que toca, e transforma ambientes com delicadeza.
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
                   <div className="h-2 w-2 rounded-full bg-accent mt-2" />
-                  <p className="text-muted-foreground">Janelas e Jardins Encantadores</p>
+                  <p className="text-muted-foreground">Decoração Encantadora: Pequenos mundos que trazem aconchego e personalidade ao ambiente.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="h-2 w-2 rounded-full bg-info mt-2" />
-                  <p className="text-muted-foreground">Cenas Nostálgicas do Passado</p>
+                  <p className="text-muted-foreground">Beleza que Conta Histórias: Representam momentos, sentimentos e memórias que ficam eternizados.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="h-2 w-2 rounded-full bg-secondary mt-2" />
-                  <p className="text-muted-foreground">Memórias e Natureza em Miniatura</p>
+                  <p className="text-muted-foreground">Presente Perfeito e Memorável: Ideal para surpreender alguém especial com algo realmente único.</p>
                 </div>
               </div>
               <Button size="lg" variant="default" asChild>

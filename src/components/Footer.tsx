@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Instagram, MessageCircle } from "lucide-react";
+import { Instagram } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 export const Footer = () => {
   return (
@@ -39,7 +40,7 @@ export const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <a href="https://wa.me/558191933388" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-accent smooth-transition">
-                  <MessageCircle className="h-4 w-4 text-muted-foreground" />
+                  <WhatsAppIcon size={20} className="text-muted-foreground" />
                   WhatsApp
                 </a>
               </li>
@@ -49,11 +50,11 @@ export const Footer = () => {
                 href="https://www.instagram.com/criando.minimundo?utm_source=ig_web_button_share_sheet&igsh=dGpwZjY2dWl0MWkw"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-accent smooth-transition"
+                className="text-muted-foreground hover:text-accent smooth-transition flex items-center gap-2"
                 aria-label="Instagram"
               >
-                <Instagram className="h-5 w-5" />
                 Instagram
+                <Instagram className="h-5 w-5" />
               </a>
             </div>
           </div>
