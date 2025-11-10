@@ -1,5 +1,6 @@
 import atelierImage from "@/assets/atelier-workspace.jpg";
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { Button } from "@/components/ui/button"; // Import Button
 
 export default function Sobre() {
   return (
@@ -32,7 +33,7 @@ export default function Sobre() {
                 <p className="text-muted-foreground leading-relaxed">
                   Acreditamos que as pequenas coisas têm um grande poder de evocar emoções e contar histórias.
                   Por isso, dedicamos nosso tempo e habilidade para criar miniaturas que capturam a essência
-                  de momentos especiais, lugares queridos e memórias que merecem ser preservadas.
+                  of moments special, places dear and memories that deserve to be preserved.
                 </p>
               </div>
             </div>
@@ -55,6 +56,11 @@ export default function Sobre() {
                   encantar e emocionar.
                 </p>
               </div>
+            </div>
+            <div className="text-center mt-12">
+              <Button size="lg" variant="hero" asChild>
+                <a href="https://wa.me/558191933388" target="_blank" rel="noopener noreferrer">Peça Sua Miniatura</a>
+              </Button>
             </div>
           </div>
         </section>
